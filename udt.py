@@ -311,7 +311,7 @@ class Transaction:
                         date = ?,
                         goal_id = ?,
                         recurring_id = ?,
-                        is_savings = ?,
+                        is_savings = ?
                     WHERE id = ?;"""
             cursor.execute(query, (self.description, self.transaction_type.name, self.amount, self.date.isoformat(), self.goal_id, self.recurring_id, int(self.is_savings), self.t_id))
         else:

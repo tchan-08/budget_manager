@@ -47,7 +47,7 @@ query = """CREATE TABLE IF NOT EXISTS Transactions (
     amount FLOAT NOT NULL,
     date DATE NOT NULL,
     goal_id INTEGER,
-    recurring_idw  INTEGER,
+    recurring_id INTEGER,
     is_savings BOOLEAN DEFAULT 0,
     FOREIGN KEY(goal_id) REFERENCES Goals(id) ON DELETE SET NULL,
     FOREIGN KEY(recurring_id) REFERENCES Recurring_Items(id) ON DELETE SET NULL
