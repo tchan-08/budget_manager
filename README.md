@@ -71,7 +71,3 @@ pip install PyQt5 matplotlib numpy
 - **Greedy allocation** sorts goals by priority (highest first) using a custom quicksort, then repeatedly splits the remaining budget evenly across unfinished goals until funds run out or all goals are complete.
 - **Weighted predictions** apply a fixed set of weights (`[0.4, 0.25, 0.15, 0.12, 0.08]`) to the five most recent transactions (via a `Stack`) to forecast near-term income, expenses, and savings.
 - **Monte Carlo simulation** runs many simulated trials of monthly savings (drawn from a normal distribution fitted to historical data) to estimate the probability of a goal being met by its deadline.
-
-## License
-
-_Not specified._
